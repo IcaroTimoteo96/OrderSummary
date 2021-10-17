@@ -14,9 +14,9 @@ body{
 
 .main{
     display: grid;
-    justify-items: center;
+    justify-content: center;
     max-width: 1440px;
-    margin : 0 auto;
+    margin-top: 15px;
 }
 
 .card{
@@ -29,21 +29,31 @@ body{
 
 .card-content{
     display: grid;
+    grid-template-rows: repeat(5,1fr);
     align-items: center;
-    gap: 15px;
-    padding: 50px;
 }
 
 .labelPlan{
+    align-items: center;
+    border-radius: 10px;
+    background-color: hsla(225, 100%, 94%, 0.349); 
     display: grid;
     grid-template-columns: repeat(3,auto);
-    border-radius: 10px;
-    background-color: hsla(225, 100%, 94%, 0.349);  
+    justify-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 70%;
 }
 
 h2 {
+    text-align: center;
     font-family: redHat;
     font-weight: 900;
+}
+
+h6 {
+    font-family: redHat;
+    font-weight: 700;
 }
 
 p{
@@ -58,19 +68,30 @@ a{
 }
 
 .btn{
-	cursor:pointer;
+    margin: 20px auto;
+    cursor:pointer;
 	font-family:redHat;
     text-align: center;
-    font-size: 16px;
-    font-weight: 900;
+    font-size: 12px;
+    font-weight: 700;
 }
-
 .btn-primary{
+    width: 70%;
     background-color : hsl(245, 75%, 52%);
-    box-shadow: 0 20px 20px -7px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 20px 20px -7px rgba(0, 0, 0, 0.25);
     border-radius:8px;
     color: hsl(0, 0%, 100%);
-    padding: 5px 75px;
+    padding: 10px;
+}
+
+.cancelOrder{
+    text-decoration: none;
+    text-align: center;
+    color:hsl(223, 47%, 23%);
+    font-family: redHat;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;    
 }
 
 
