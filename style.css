@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: redHat;
+    src: url("fonts/static/RedHatDisplay-Bold.ttf");
+}
+
+body{
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;   
+}
+
+.main{
+    display: grid;
+    justify-content: center;
+    max-width: 1440px;
+    margin-top: 15px;
+}
+
+.card{
+    border-radius: 1em;
+    box-shadow: 0 20px 20px -7px rgba(0, 0, 0, 0.25);
+    background-color: hsl(0, 0%, 100%);
+    overflow: hidden;
+    width: 450px;
+}
+
+.card-content{
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    align-items: center;
+}
+
+.labelPlan{
+    align-items: center;
+    border-radius: 10px;
+    background-color: hsla(225, 100%, 94%, 0.349); 
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    justify-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 70%;
+}
+
+h2 {
+    text-align: center;
+    font-family: redHat;
+    font-weight: 900;
+}
+
+h6 {
+    font-family: redHat;
+    font-weight: 700;
+}
+
+p{
+    font-size: 16px;
+}
+
+a{
+    color:hsl(223, 47%, 23%);
+    font-family: redHat;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.btn{
+    margin: 20px auto;
+    cursor:pointer;
+	font-family:redHat;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+}
+.btn-primary{
+    width: 70%;
+    background-color : hsl(245, 75%, 52%);
+    box-shadow: 0px 20px 20px -7px rgba(0, 0, 0, 0.25);
+    border-radius:8px;
+    color: hsl(0, 0%, 100%);
+    padding: 10px;
+}
+
+.cancelOrder{
+    text-decoration: none;
+    text-align: center;
+    color:hsl(223, 47%, 23%);
+    font-family: redHat;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;    
+}
+
+
+
+
